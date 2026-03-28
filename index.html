@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apostila completa Os 4 Búzios de Exú. Aprenda consagração, jogo de confirmação, posicionamentos e interpretação na Tradição Afro-Brasileira.">
+    <meta name="keywords" content="búzios, exú, umbanda, candomblé, oráculo, apostila, consagração">
+    <title>Os 4 Búzios de Exú - Apostila Completa | R$ 49,90</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F4E4BC;
+            --gold-dark: #B8860B;
+            --spiritual-red: #8B0000;
+            --deep-blue: #1a1a2e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #f5f5f5;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        h1, h2, h3, .spiritual-font { font-family: 'Cinzel', serif; }
+        .gold-text { color: var(--gold-primary); text-shadow: 0 0 20px rgba(212,175,55,0.3); }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+            color: #1a1a2e;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(212,175,55,0.4);
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 20px 60px rgba(212,175,55,0.6); }
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: 0.5s;
+        }
+        .btn-primary:hover::before { left: 100%; }
+        .glass-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212,175,55,0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover { border-color: rgba(212,175,55,0.5); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .floating { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+        .pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+        @keyframes pulseGlow {
+            0%,100%{box-shadow:0 0 20px rgba(212,175,55,0.4)}
+            50%{box-shadow:0 0 40px rgba(212,175,55,0.8)}
+        }
+        .divider-gold {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, var(--gold-primary) 50%, transparent 100%);
+            margin: 2rem auto;
+            max-width: 200px;
+        }
+        .check-item { position: relative; padding-left: 2rem; margin-bottom: 0.5rem; }
+        .check-item::before { content: '✦'; position: absolute; left: 0; color: var(--gold-primary); font-weight: bold; }
+        .buzio-icon {
+            width: 60px; height: 40px;
+            background: linear-gradient(145deg, #FFE4B5 0%, #DEB887 40%, #CD853F 100%);
+            border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+            position: relative; display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #D4AF37;
+        }
+        .buzio-icon.aberto::before {
+            content: '';
+            position: absolute;
+            top: 15%; left: 10%; right: 10%; bottom: 20%;
+            background: linear-gradient(180deg, #2C1810 0%, #1a0f0a 100%);
+            border-radius: 50% 50% 40% 40%;
+        }
+        .buzio-icon.fechado::before {
+            content: '';
+            position: absolute;
+            top: 45%; left: 20%; right: 20%; height: 10%;
+            background: #2C1810;
+            border-radius: 50%;
+        }
+        .price-old { position: relative; color: #666; font-size: 1.5rem; }
+        .price-old::after {
+            content: '';
+            position: absolute;
+            left: 0; top: 50%;
+            width: 100%; height: 2px;
+            background: #ff4444;
+            transform: rotate(-5deg);
+        }
+        .guarantee-seal {
+            width: 120px; height: 120px;
+            border: 3px solid var(--gold-primary);
+            border-radius: 50%;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center; font-weight: bold;
+            color: var(--gold-primary);
+            transform: rotate(-15deg);
+            box-shadow: 0 0 30px rgba(212,175,55,0.3);
+            font-family: 'Cinzel', serif;
+        }
+        .countdown-box {
+            background: rgba(139,0,0,0.3);
+            border: 1px solid rgba(212,175,55,0.3);
+            border-radius: 10px; padding: 1rem; text-align: center;
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(0,0,0,0.3) 100%);
+            border-left: 3px solid var(--gold-primary);
+        }
+        .module-number {
+            width: 50px; height: 50px;
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+            color: #1a1a2e; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: bold; font-size: 1.5rem;
+            font-family: 'Cinzel', serif; flex-shrink: 0;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 20% 50%, rgba(212,175,55,0.1) 0%, transparent 50%),
+                              radial-gradient(circle at 80% 80%, rgba(139,0,0,0.1) 0%, transparent 50%);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 5rem 0; }
+        img { max-width: 100%; height: auto; }
+
+        /* FAQ accordion */
+        .faq-item { margin-bottom: 1rem; }
+        .faq-question {
+            width: 100%; text-align: left; background: none; border: none;
+            cursor: pointer; padding: 1.5rem;
+            font-family: 'Lato', sans-serif; font-size: 1rem;
+            display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+        }
+        .faq-answer { display: none; padding: 0 1.5rem 1.5rem; }
+        .faq-answer.open { display: block; }
+        .faq-icon { transition: transform 0.3s; flex-shrink: 0; }
+        .faq-icon.rotated { transform: rotate(90deg); }
+
+        /* Stars */
+        .stars { color: #D4AF37; font-size: 0.875rem; margin-top: 0.75rem; }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 1rem; }
+            section { padding: 3rem 0; }
+            h1 { font-size: 2.5rem !important; }
+            .btn-primary { padding: 1rem 2rem !important; font-size: 1.1rem !important; }
+            .hide-mobile { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Urgency Bar -->
+    <div style="background:linear-gradient(90deg,rgba(139,0,0,0.95),rgba(180,0,0,0.95));color:white;text-align:center;padding:0.6rem;font-weight:bold;font-size:0.875rem;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid rgba(212,175,55,0.3);">
+        <i class="fas fa-fire" style="color:#D4AF37;margin-right:0.5rem;"></i>
+        Promoção Especial — Preço Reduzido por Tempo Limitado
+        <i class="fas fa-fire" style="color:#D4AF37;margin-left:0.5rem;"></i>
+    </div>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero-pattern" style="min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,0.4);"></div>
+
+        <!-- Floating búzios -->
+        <div class="floating" style="position:absolute;top:5rem;left:2rem;opacity:0.15;animation-delay:0s;"><div class="buzio-icon aberto"></div></div>
+        <div class="floating" style="position:absolute;top:10rem;right:5rem;opacity:0.15;animation-delay:2s;"><div class="buzio-icon fechado"></div></div>
+        <div class="floating" style="position:absolute;bottom:8rem;left:25%;opacity:0.15;animation-delay:4s;"><div class="buzio-icon aberto"></div></div>
+        <div class="floating" style="position:absolute;bottom:12rem;right:20%;opacity:0.15;animation-delay:1s;"><div class="buzio-icon fechado"></div></div>
+
+        <div class="container" style="position:relative;z-index:10;text-align:center;max-width:1000px;">
+            <div style="margin-bottom:1.5rem;">
+                <span style="background:rgba(212,175,55,0.15);color:#D4AF37;padding:0.35rem 1.25rem;border-radius:9999px;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;border:1px solid rgba(212,175,55,0.4);">
+                    ✦ Tradição Afro-Brasileira ✦
+                </span>
+            </div>
+
+            <h1 style="font-size:4rem;font-weight:900;margin-bottom:1.5rem;line-height:1.05;">
+                <span class="gold-gradient">OS 4 BÚZIOS</span><br>
+                <span style="color:white;">DE EXÚ</span>
+            </h1>
+
+            <p style="font-size:1.4rem;color:#d1d5db;margin-bottom:1rem;font-style:italic;" class="spiritual-font">
+                "Laroyê Exú! Desvende os mistérios do oráculo sagrado"
+            </p>
+
+            <div class="divider-gold"></div>
+
+            <p style="font-size:1.1rem;color:#9ca3af;margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto;">
+                Apostila completa com consagração, jogo de confirmação, posicionamentos e interpretação das caídas. Do básico ao avançado.
+            </p>
+
+            <!-- Price hero -->
+            <div class="glass-card" style="border-radius:1rem;padding:1.75rem;max-width:380px;margin:0 auto 2rem;">
+                <div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:0.75rem;">
+                    <span class="price-old">R$ 97,00</span>
+                    <span style="color:#D4AF37;font-weight:bold;background:rgba(139,0,0,0.6);padding:0.2rem 0.75rem;border-radius:0.25rem;font-size:0.8rem;">-48% OFF</span>
+                </div>
+                <div style="font-size:4rem;font-weight:900;" class="gold-gradient">R$ 49,90</div>
+                <p style="color:#9ca3af;margin-top:0.5rem;font-size:0.85rem;">Pagamento único • Acesso vitalício</p>
+            </div>
+
+            <a href="https://pay.kiwify.com.br/Ve0vmDU" class="btn-primary pulse-glow" style="padding:1.4rem 3rem;border-radius:9999px;font-size:1.35rem;margin-bottom:1.5rem;">
+                <i class="fas fa-shopping-cart" style="margin-right:0.75rem;"></i>QUERO APRENDER AGORA
+            </a>
+
+            <p style="color:rgba(212,175,55,0.8);font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:3rem;">
+                <i class="fas fa-lock" style="margin-right:0.5rem;"></i>Compra 100% Segura • Acesso Imediato
+            </p>
+
+            <!-- Countdown -->
+            <div style="max-width:560px;margin:0 auto;">
+                <p style="color:#D4AF37;margin-bottom:0.75rem;font-size:0.8rem;text-transform:uppercase;letter-spacing:2px;">⏱ Oferta termina em:</p>
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;">
+                    <div class="countdown-box"><div style="font-size:2rem;font-weight:700;color:white;" id="hours">23</div><div style="font-size:0.7rem;color:#9ca3af;">HORAS</div></div>
+                    <div class="countdown-box"><div style="font-size:2rem;font-weight:700;color:white;" id="minutes">59</div><div style="font-size:0.7rem;color:#9ca3af;">MIN</div></div>
+                    <div class="countdown-box"><div style="font-size:2rem;font-weight:700;color:white;" id="seconds">59</div><div style="font-size:0.7rem;color:#9ca3af;">SEG</div></div>
+                    <div class="countdown-box" style="background:rgba(212,175,55,0.2);border-color:rgba(212,175,55,0.5);"><div style="font-size:0.7rem;color:#D4AF37;font-weight:700;line-height:1.4;">ÚLTIMAS<br>VAGAS</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ PROBLEM ══════════════ -->
+    <section style="background:rgba(0,0,0,0.3);">
+        <div class="container" style="text-align:center;max-width:860px;">
+            <h2 style="font-size:2.25rem;font-weight:700;margin-bottom:0.75rem;" class="spiritual-font">
+                Você já se sentiu <span class="gold-text">perdido</span> tentando entender os búzios?
+            </h2>
+            <p style="color:#9ca3af;margin-bottom:3rem;">Se você se identifica com alguma dessas situações, este material é para você.</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;">
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;">
+                    <i class="fas fa-question-circle" style="font-size:2.5rem;color:#f87171;margin-bottom:1rem;"></i>
+                    <p style="color:#d1d5db;font-weight:600;margin-bottom:0.5rem;">Não sabe como consagrar?</p>
+                    <p style="color:#9ca3af;font-size:0.875rem;">A consagração correta é fundamental para o oráculo funcionar.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;">
+                    <i class="fas fa-random" style="font-size:2.5rem;color:#f87171;margin-bottom:1rem;"></i>
+                    <p style="color:#d1d5db;font-weight:600;margin-bottom:0.5rem;">Dificuldade nos posicionamentos?</p>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Cruz e Quadrado são a chave da interpretação profunda.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;">
+                    <i class="fas fa-book-open" style="font-size:2.5rem;color:#f87171;margin-bottom:1rem;"></i>
+                    <p style="color:#d1d5db;font-weight:600;margin-bottom:0.5rem;">Falta material de confiança?</p>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Conteúdo organizado e fundamentado na tradição.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ SOLUTION ══════════════ -->
+    <section>
+        <div class="container">
+            <div style="text-align:center;margin-bottom:4rem;">
+                <h2 style="font-size:3rem;font-weight:700;margin-bottom:1rem;" class="spiritual-font">
+                    <span class="gold-gradient">A SOLUÇÃO COMPLETA</span>
+                </h2>
+                <p style="font-size:1.2rem;color:#9ca3af;">Tudo que você precisa em um único material digital</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:3rem;align-items:center;">
+                <div>
+                    <div style="display:flex;gap:1rem;margin-bottom:2rem;align-items:flex-start;">
+                        <div class="module-number">1</div>
+                        <div>
+                            <h3 style="font-size:1.2rem;font-weight:700;color:#D4AF37;margin-bottom:0.4rem;">Consagração dos Búzios</h3>
+                            <p style="color:#9ca3af;">Ervas de descarrego, maceração, preparação, corte, alimentação e oração completa de consagração.</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:1rem;margin-bottom:2rem;align-items:flex-start;">
+                        <div class="module-number">2</div>
+                        <div>
+                            <h3 style="font-size:1.2rem;font-weight:700;color:#D4AF37;margin-bottom:0.4rem;">O Jogo de Confirmação</h3>
+                            <p style="color:#9ca3af;">Òkànràn, Òdí, Ètawa, Àlàáfíà e Òyèkú — todas as 5 caídas com interpretação detalhada.</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:1rem;margin-bottom:2rem;align-items:flex-start;">
+                        <div class="module-number">3</div>
+                        <div>
+                            <h3 style="font-size:1.2rem;font-weight:700;color:#D4AF37;margin-bottom:0.4rem;">Posicionamentos</h3>
+                            <p style="color:#9ca3af;">Cruz e Quadrado — os dois eixos. 16 figuras de posicionamentos secundários interpretados.</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:1rem;align-items:flex-start;">
+                        <div class="module-number">4</div>
+                        <div>
+                            <h3 style="font-size:1.2rem;font-weight:700;color:#D4AF37;margin-bottom:0.4rem;">Uso Ampliado</h3>
+                            <p style="color:#9ca3af;">Como aplicar a consagração nos 7 búzios de Exú e Pomba Gira. Orientações gerais de interpretação.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="border-radius:1rem;padding:2rem;text-align:center;position:relative;overflow:hidden;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(212,175,55,0.08),transparent);"></div>
+                    <div style="position:relative;z-index:10;">
+                        <p style="color:#9ca3af;font-size:0.8rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;">Àlàáfíà — 4 Abertos</p>
+                        <div style="display:flex;justify-content:center;gap:0.75rem;margin-bottom:1.25rem;flex-wrap:wrap;">
+                            <div class="buzio-icon aberto" style="width:70px;height:48px;"></div>
+                            <div class="buzio-icon aberto" style="width:70px;height:48px;"></div>
+                            <div class="buzio-icon aberto" style="width:70px;height:48px;"></div>
+                            <div class="buzio-icon aberto" style="width:70px;height:48px;"></div>
+                        </div>
+                        <h3 style="font-size:1.5rem;font-weight:700;color:#4ade80;margin-bottom:0.4rem;" class="spiritual-font">FAVORECIMENTO TOTAL</h3>
+                        <p style="color:#d1d5db;margin-bottom:1.5rem;font-size:0.9rem;">Paz, prosperidade e caminhos abertos</p>
+                        <div style="text-align:left;background:rgba(0,0,0,0.35);padding:1.25rem;border-radius:0.5rem;font-size:0.875rem;color:#9ca3af;">
+                            <p class="check-item">PDF completo e ilustrado</p>
+                            <p class="check-item">Imagens nítidas dos búzios</p>
+                            <p class="check-item">Diagramas de posicionamentos</p>
+                            <p class="check-item">Acesso imediato e vitalício</p>
+                            <p class="check-item">Receitas dos 3 padês</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ WHAT'S INSIDE ══════════════ -->
+    <section style="background:rgba(0,0,0,0.2);">
+        <div class="container">
+            <h2 style="font-size:2.5rem;font-weight:700;text-align:center;margin-bottom:0.75rem;" class="spiritual-font">
+                <span class="gold-gradient">O QUE VOCÊ VAI RECEBER</span>
+            </h2>
+            <p style="color:#9ca3af;text-align:center;margin-bottom:3rem;">Tudo em um único download. Estude no celular, tablet ou computador.</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;text-align:center;">
+                    <div style="width:4rem;height:4rem;margin:0 auto 1rem;border-radius:50%;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#D4AF37;"><i class="fas fa-file-pdf"></i></div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:0.5rem;">Apostila Completa em PDF</h3>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Mais de 22 páginas de conteúdo exclusivo com capa profissional e sumário interativo.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;text-align:center;">
+                    <div style="width:4rem;height:4rem;margin:0 auto 1rem;border-radius:50%;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#D4AF37;"><i class="fas fa-images"></i></div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:0.5rem;">Imagens em Alta Qualidade</h3>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Todas as ilustrações dos búzios em alta resolução, nítidas e fiéis à realidade.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;text-align:center;">
+                    <div style="width:4rem;height:4rem;margin:0 auto 1rem;border-radius:50%;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#D4AF37;"><i class="fas fa-utensils"></i></div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:0.5rem;">Receitas dos 3 Padês</h3>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Padê de Cachaça, Mel e Dendê — completos com ingredientes, modo de preparo e substituições.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;text-align:center;">
+                    <div style="width:4rem;height:4rem;margin:0 auto 1rem;border-radius:50%;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#D4AF37;"><i class="fas fa-praying-hands"></i></div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:0.5rem;">Oração de Consagração</h3>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Texto completo para você realizar a consagração com segurança e fundamento espiritual.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;text-align:center;">
+                    <div style="width:4rem;height:4rem;margin:0 auto 1rem;border-radius:50%;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#D4AF37;"><i class="fas fa-crosshairs"></i></div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:0.5rem;">16 Posicionamentos</h3>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Cruz e Quadrado interpretados do básico ao avançado. Inclui posicionamentos secundários.</p>
+                </div>
+                <div class="glass-card" style="padding:1.75rem;border-radius:0.75rem;text-align:center;">
+                    <div style="width:4rem;height:4rem;margin:0 auto 1rem;border-radius:50%;background:rgba(212,175,55,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:#D4AF37;"><i class="fas fa-infinity"></i></div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:0.5rem;">Acesso Vitalício</h3>
+                    <p style="color:#9ca3af;font-size:0.875rem;">Baixe quantas vezes quiser. Inclui todas as atualizações futuras gratuitamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ TESTIMONIALS ══════════════ -->
+    <section>
+        <div class="container" style="max-width:860px;">
+            <h2 style="font-size:2rem;font-weight:700;text-align:center;margin-bottom:0.75rem;" class="spiritual-font">O que dizem sobre o material</h2>
+            <p style="color:#9ca3af;text-align:center;margin-bottom:3rem;">Mais de 500 praticantes já transformaram sua conexão com o oráculo</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-bottom:3rem;">
+                <div class="testimonial-card" style="padding:1.5rem;border-radius:0 0.75rem 0.75rem 0;">
+                    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+                        <div style="width:3rem;height:3rem;border-radius:50%;background:rgba(212,175,55,0.25);display:flex;align-items:center;justify-content:center;color:#D4AF37;font-weight:700;flex-shrink:0;">MC</div>
+                        <div><p style="font-weight:700;color:white;">Maria C.</p><p style="font-size:0.75rem;color:#9ca3af;">Umbandista há 5 anos</p></div>
+                    </div>
+                    <p style="color:#d1d5db;font-style:italic;">"Finalmente um material organizado e respeitoso com a tradição. As imagens dos búzios estão perfeitas, muito nítidas. Já estou usando na minha casa!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="testimonial-card" style="padding:1.5rem;border-radius:0 0.75rem 0.75rem 0;">
+                    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+                        <div style="width:3rem;height:3rem;border-radius:50%;background:rgba(212,175,55,0.25);display:flex;align-items:center;justify-content:center;color:#D4AF37;font-weight:700;flex-shrink:0;">JS</div>
+                        <div><p style="font-weight:700;color:white;">João S.</p><p style="font-size:0.75rem;color:#9ca3af;">Iniciante na jornada</p></div>
+                    </div>
+                    <p style="color:#d1d5db;font-style:italic;">"Nunca tinha encontrado nada tão completo sobre os 4 búzios. A explicação dos posicionamentos em cruz e quadrado facilitou muito minha compreensão."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="testimonial-card" style="padding:1.5rem;border-radius:0 0.75rem 0.75rem 0;">
+                    <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+                        <div style="width:3rem;height:3rem;border-radius:50%;background:rgba(212,175,55,0.25);display:flex;align-items:center;justify-content:center;color:#D4AF37;font-weight:700;flex-shrink:0;">AP</div>
+                        <div><p style="font-weight:700;color:white;">Ana P.</p><p style="font-size:0.75rem;color:#9ca3af;">Médium de Umbanda</p></div>
+                    </div>
+                    <p style="color:#d1d5db;font-style:italic;">"A oração de consagração e os padês estão detalhados de forma incrível. Uso como referência para as minhas consultas. Vale muito mais do que o preço!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="glass-card" style="display:flex;align-items:center;justify-content:center;gap:2rem;padding:1.5rem 2rem;border-radius:9999px;flex-wrap:wrap;">
+                <div style="text-align:center;">
+                    <p style="font-size:2rem;font-weight:700;" class="gold-text">500+</p>
+                    <p style="font-size:0.75rem;color:#9ca3af;">Cópias vendidas</p>
+                </div>
+                <div style="width:1px;height:2.5rem;background:rgba(212,175,55,0.3);" class="hide-mobile"></div>
+                <div style="text-align:center;">
+                    <p style="font-size:2rem;font-weight:700;" class="gold-text">4.9★</p>
+                    <p style="font-size:0.75rem;color:#9ca3af;">Avaliação média</p>
+                </div>
+                <div style="width:1px;height:2.5rem;background:rgba(212,175,55,0.3);" class="hide-mobile"></div>
+                <div style="text-align:center;">
+                    <p style="font-size:2rem;font-weight:700;" class="gold-text">100%</p>
+                    <p style="font-size:0.75rem;color:#9ca3af;">Satisfação garantida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ GUARANTEE ══════════════ -->
+    <section style="background:rgba(0,0,0,0.3);">
+        <div class="container" style="text-align:center;max-width:700px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:2rem;">
+                <div class="guarantee-seal">
+                    <span style="font-size:2.2rem;font-weight:900;">7</span>
+                    <span style="font-size:0.7rem;line-height:1.4;">DIAS DE<br>GARANTIA</span>
+                </div>
+                <div style="max-width:440px;text-align:center;">
+                    <h3 style="font-size:1.75rem;font-weight:700;color:white;margin-bottom:1rem;" class="spiritual-font">Risco Zero para Você</h3>
+                    <p style="color:#9ca3af;margin-bottom:1.25rem;">
+                        Se por qualquer motivo você não ficar satisfeito com o material,
+                        devolvemos 100% do seu dinheiro em até 7 dias. Sem perguntas, sem burocracia.
+                    </p>
+                    <p style="color:#D4AF37;font-size:0.9rem;font-weight:600;">
+                        <i class="fas fa-shield-alt" style="margin-right:0.5rem;"></i>Compra 100% segura via Kiwify
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FAQ ══════════════ -->
+    <section>
+        <div class="container" style="max-width:700px;">
+            <h2 style="font-size:2rem;font-weight:700;text-align:center;margin-bottom:3rem;" class="spiritual-font">
+                Perguntas Frequentes
+            </h2>
+
+            <div id="faq-container">
+                <div class="faq-item glass-card" style="border-radius:0.5rem;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span style="font-weight:700;color:#D4AF37;">Preciso ter experiência prévia?</span>
+                        <i class="fas fa-chevron-right faq-icon" style="color:#D4AF37;"></i>
+                    </button>
+                    <div class="faq-answer"><p style="color:#9ca3af;font-size:0.9rem;">Não! O material foi preparado tanto para iniciantes quanto para praticantes que querem aprofundar. Começamos do básico e avançamos gradualmente.</p></div>
+                </div>
+
+                <div class="faq-item glass-card" style="border-radius:0.5rem;margin-top:1rem;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span style="font-weight:700;color:#D4AF37;">Como recebo o material?</span>
+                        <i class="fas fa-chevron-right faq-icon" style="color:#D4AF37;"></i>
+                    </button>
+                    <div class="faq-answer"><p style="color:#9ca3af;font-size:0.9rem;">Imediatamente após a confirmação do pagamento, você recebe o acesso ao PDF por e-mail. É 100% digital, sem espera.</p></div>
+                </div>
+
+                <div class="faq-item glass-card" style="border-radius:0.5rem;margin-top:1rem;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span style="font-weight:700;color:#D4AF37;">Posso usar no celular?</span>
+                        <i class="fas fa-chevron-right faq-icon" style="color:#D4AF37;"></i>
+                    </button>
+                    <div class="faq-answer"><p style="color:#9ca3af;font-size:0.9rem;">Sim! O PDF é otimizado para leitura em qualquer dispositivo: celular, tablet ou computador.</p></div>
+                </div>
+
+                <div class="faq-item glass-card" style="border-radius:0.5rem;margin-top:1rem;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span style="font-weight:700;color:#D4AF37;">O material é atualizado?</span>
+                        <i class="fas fa-chevron-right faq-icon" style="color:#D4AF37;"></i>
+                    </button>
+                    <div class="faq-answer"><p style="color:#9ca3af;font-size:0.9rem;">Sim! Todas as atualizações futuras são incluídas gratuitamente para quem já comprou.</p></div>
+                </div>
+
+                <div class="faq-item glass-card" style="border-radius:0.5rem;margin-top:1rem;">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span style="font-weight:700;color:#D4AF37;">Serve para 7 búzios também?</span>
+                        <i class="fas fa-chevron-right faq-icon" style="color:#D4AF37;"></i>
+                    </button>
+                    <div class="faq-answer"><p style="color:#9ca3af;font-size:0.9rem;">Sim! O material inclui um capítulo exclusivo explicando como aplicar toda a consagração nos 7 búzios de Exú e Pomba Gira.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FINAL CTA ══════════════ -->
+    <section style="position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(212,175,55,0.08),transparent);"></div>
+        <div class="container" style="position:relative;z-index:10;text-align:center;max-width:800px;">
+
+            <h2 style="font-size:3rem;font-weight:700;margin-bottom:1.5rem;" class="spiritual-font">
+                <span class="gold-gradient">OS CAMINHOS ESTÃO ABERTOS</span>
+            </h2>
+            <p style="font-size:1.2rem;color:#d1d5db;margin-bottom:2.5rem;">
+                Aprenda a ler os sinais de Exú e transforme<br>sua conexão espiritual para sempre.
+            </p>
+
+            <div class="glass-card" style="max-width:480px;margin:0 auto 2rem;padding:2rem;border-radius:1rem;border:2px solid rgba(212,175,55,0.4);">
+                <p style="color:#9ca3af;margin-bottom:0.75rem;">De <span class="price-old">R$ 97,00</span> por apenas</p>
+                <p style="font-size:4rem;font-weight:900;margin-bottom:0.5rem;" class="gold-gradient">R$ 49,90</p>
+                <p style="color:#D4AF37;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;">Oferta por tempo limitado</p>
+            </div>
+
+            <a href="https://pay.kiwify.com.br/Ve0vmDU" class="btn-primary pulse-glow" style="padding:1.5rem 4rem;border-radius:9999px;font-size:1.4rem;margin-bottom:1.5rem;">
+                <i class="fas fa-shopping-cart" style="margin-right:0.75rem;"></i>COMPRAR AGORA
+            </a>
+
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0.75rem;font-size:0.875rem;color:#6b7280;margin-top:1rem;">
+                <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;justify-content:center;">
+                    <span><i class="fas fa-lock" style="color:#D4AF37;margin-right:0.4rem;"></i>Pagamento Seguro</span>
+                    <span><i class="fas fa-bolt" style="color:#D4AF37;margin-right:0.4rem;"></i>Acesso Imediato</span>
+                    <span><i class="fas fa-undo" style="color:#D4AF37;margin-right:0.4rem;"></i>7 Dias de Garantia</span>
+                </div>
+                <p style="font-size:0.75rem;margin-top:0.25rem;">Processado por Kiwify — Plataforma 100% segura</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer style="background:rgba(0,0,0,0.6);border-top:1px solid rgba(212,175,55,0.2);padding:3rem 0;text-align:center;color:#6b7280;font-size:0.875rem;">
+        <div class="container">
+            <p style="font-size:1.25rem;color:rgba(212,175,55,0.6);margin-bottom:0.5rem;" class="spiritual-font">Laroyê Exú!</p>
+            <p style="margin-bottom:0.25rem;">© 2025 Os 4 Búzios de Exú. Todos os direitos reservados.</p>
+            <p style="font-size:0.75rem;margin-bottom:1.25rem;">Tradição Afro-Brasileira • Umbanda & Candomblé</p>
+            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;">
+                <a href="#" style="color:#6b7280;text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#6b7280'">Termos de Uso</a>
+                <a href="#" style="color:#6b7280;text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#6b7280'">Privacidade</a>
+                <a href="#" style="color:#6b7280;text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#6b7280'">Suporte</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ── Countdown (resets to end of current day) ──
+        function updateCountdown() {
+            const now = new Date();
+            const end = new Date();
+            end.setHours(23, 59, 59, 999);
+            const diff = end - now;
+            const h = Math.floor(diff / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+            document.getElementById('hours').textContent   = String(h).padStart(2,'0');
+            document.getElementById('minutes').textContent = String(m).padStart(2,'0');
+            document.getElementById('seconds').textContent = String(s).padStart(2,'0');
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // ── FAQ accordion ──
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon   = btn.querySelector('.faq-icon');
+            const isOpen = answer.classList.contains('open');
+            // close all
+            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+            document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotated'));
+            // open clicked if it was closed
+            if (!isOpen) {
+                answer.classList.add('open');
+                icon.classList.add('rotated');
+            }
+        }
+
+        // ── Smooth scroll ──
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const t = document.querySelector(a.getAttribute('href'));
+                if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // ── Entrance animations on scroll ──
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
